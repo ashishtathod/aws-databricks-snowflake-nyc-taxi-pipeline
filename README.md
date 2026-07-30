@@ -386,7 +386,7 @@ The Pipeline Monitoring Dashboard provides engineers with complete visibility in
 # Future Enhancements
 Although the current implementation demonstrates a complete end-to-end Data Engineering solution, several enhancements could further extend the platform.
 
-## Potential future improvements include:
+#### Potential future improvements include:
 
 Automated CI/CD deployment using GitHub Actions.
 Infrastructure provisioning through Terraform.
