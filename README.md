@@ -92,7 +92,7 @@ Pipeline Monitoring Dashboard
 Throughout the pipeline, execution metadata is captured inside a dedicated PIPELINE_MONITORING table, enabling visibility into processing duration, execution status, processed records, errors, and overall pipeline health.
 
 # Solution Architecture
-![Architecture](architecture/aws_pipeline_architecture.png)
+![Architecture](architecture/NYC_Taxi_End-to-End_Data_Engineering_Architecture.png)
 
 The architecture illustrates the complete data lifecycle from ingestion to business intelligence while highlighting the interactions between AWS, Databricks, Snowflake, and Streamlit.
 
@@ -379,10 +379,10 @@ Each execution is orchestrated using Databricks Workflows, allowing the entire p
 The repository includes screenshots demonstrating both business analytics and operational monitoring capabilities.
 
 ## Executive Dashboard
-![Executive Dashboard](<StreamlitDashboards/ExecutiveDashboard/screenshots/KPIs and Revenue Trend.png>)
-![Daily Metrics Comparison](<StreamlitDashboards/ExecutiveDashboard/screenshots/Daily Metrics Comparison.png>)
-![Payment Method Analysis](<StreamlitDashboards/ExecutiveDashboard/screenshots/Payment Method Analysis.png>)
-![Vendor Analysis](<StreamlitDashboards/ExecutiveDashboard/screenshots/Vendor Analysis.png>)
+![Executive Dashboard](<StreamlitDashboards/ExecutiveDashboard/screenshots/KPIs_and_Revenue_Trend.png>)
+![Daily Metrics Comparison](<StreamlitDashboards/ExecutiveDashboard/screenshots/Daily_Metrics_Comparison.png>)
+![Payment Method Analysis](<StreamlitDashboards/ExecutiveDashboard/screenshots/Payment_Method_Analysis.png>)
+![Vendor Analysis](<StreamlitDashboards/ExecutiveDashboard/screenshots/Vendor_Analysis.png>)
 
 The Executive Dashboard provides interactive visualizations for business stakeholders, including key performance indicators, revenue trends, trip volume analysis, vendor performance, payment method insights, hourly demand, and daily operational metrics.
 
