@@ -67,36 +67,6 @@ The architecture illustrates the complete data lifecycle from ingestion to busin
 # Repository Structure
 The repository is organized to separate data processing logic, visualization, architecture documentation, SQL scripts, and project assets. This modular structure improves maintainability, enables easier collaboration, and mirrors the organization commonly found in production Data Engineering projects.
 
-aws-databricks-snowflake-nyc-taxi-pipeline/
-│
-├── architecture/
-│   ├── NYC Taxi End-to-End Data Engineering Architecture.drawio.png
-│   └── aws_pipeline_architecture.png
-│
-├── StreamlitDashboards/
-│   ├── ExecutiiveDashboards/
-│   │   ├── ExecutiiveDashboards.py
-│   │   └── screenshots/
-│   └── MonitoringDashboard
-│   │   ├── PipelineMonitoring.py
-│   │   └── screenshots/
-│
-├── notebooks/
-│   ├── bronze_ingestion.ipynb
-│   ├── silver_transformation.ipynb
-│   ├── data_quality.ipynb
-│   ├── gold_aggregation.ipynb
-│   ├── pipeline_monitoring.ipynb
-│   ├── export_to_snowflake.ipynb
-│   └── refresh_snowflake_tables.ipynb
-│
-├── sql/
-│   ├── ConfiguringSnowflake.sql
-│   └── DatabricksQueries.sql
-│   
-├── README.md
-├── requirements.txt
-└── LICENSE
 
 # End-to-End Data Flow
 The pipeline follows a modern cloud-native Lakehouse architecture that incrementally ingests raw taxi trip records from Amazon S3, transforms the data using Databricks, stores curated datasets within Snowflake, and presents business insights through Streamlit dashboards.
@@ -120,17 +90,6 @@ Amazon Web Services serves as the cloud storage layer of the solution.
 An Amazon S3 bucket acts as the centralized Data Lake where raw NYC Taxi datasets are stored before processing begins. The bucket provides durable, scalable, and cost-effective object storage capable of handling large volumes of structured data.
 
 The S3 bucket contains dedicated folders for raw source files and streaming checkpoints. Raw CSV files are placed within the ingestion directory, while checkpoint data is maintained separately to support Structured Streaming fault tolerance and exactly-once processing.
-
-Typical bucket structure:
-s3://<bucket-name>/
-│
-├── raw/
-│   └── nyc_taxi_data.csv
-│
-└── checkpoints/
-    ├── bronze/
-    ├── silver/
-    └── gold/
 
 Separating raw files from checkpoint metadata simplifies pipeline maintenance while allowing individual processing layers to resume execution safely after interruptions.
 
@@ -371,10 +330,10 @@ Each execution is orchestrated using Databricks Workflows, allowing the entire p
 The repository includes screenshots demonstrating both business analytics and operational monitoring capabilities.
 
 ## Executive Dashboard
-![alt text](<StreamlitDashboards/ExecutiveDashboard/screenshots/Daily Metrics Comparison.png>)
-![alt text](<StreamlitDashboards/ExecutiveDashboard/screenshots/KPIs and Revenue Trend.png>)
-![alt text](<StreamlitDashboards/ExecutiveDashboard/screenshots/Payment Method Analysis.png>)
-![alt text](<StreamlitDashboards/ExecutiveDashboard/screenshots/Vendor Analysis.png>)
+![Executive Dashboard](<StreamlitDashboards/ExecutiveDashboard/screenshots/KPIs and Revenue Trend.png>)
+![Daily Metrics Comparison](<StreamlitDashboards/ExecutiveDashboard/screenshots/Daily Metrics Comparison.png>)
+![Payment Method Analysis](<StreamlitDashboards/ExecutiveDashboard/screenshots/Payment Method Analysis.png>)
+![Vendor Analysis](<StreamlitDashboards/ExecutiveDashboard/screenshots/Vendor Analysis.png>)
 
 The Executive Dashboard provides interactive visualizations for business stakeholders, including key performance indicators, revenue trends, trip volume analysis, vendor performance, payment method insights, hourly demand, and daily operational metrics.
 
