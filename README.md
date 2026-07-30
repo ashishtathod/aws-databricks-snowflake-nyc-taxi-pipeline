@@ -5,10 +5,50 @@
 ![Python](https://img.shields.io/badge/Python-3.12-blue?logo=python)
 ![Streamlit](https://img.shields.io/badge/Streamlit-Dashboard-FF4B4B?logo=streamlit)
 
-A production-inspired end-to-end Data Engineering solution that ingests raw NYC Taxi trip records into an AWS Data Lake, processes them using Databricks' Medallion Architecture, stores business-ready analytics in Snowflake, and delivers interactive Executive Analytics and Pipeline Monitoring dashboards through Streamlit.
 
 # Solution Architecture
 ![Architecture](architecture/aws_pipeline_architecture.png)
+
+## Project Highlights
+
+- End-to-End Data Engineering Pipeline
+- AWS S3 Data Lake
+- Databricks Auto Loader
+- Structured Streaming
+- Medallion Architecture
+- Delta Lake
+- Unity Catalog
+- Snowflake Data Warehouse
+- Executive Analytics Dashboard
+- Pipeline Monitoring Dashboard
+- IAM Role Authentication
+- Databricks Secret Scopes
+- Databricks Workflows
+
+## 📑 Quick Navigation
+
+- [Project Overview](#project-overview)
+- [Business Problem](#business-problem)
+- [Solution Overview](#solution-overview)
+- [Solution Architecture](#solution-architecture)
+- [Technology Stack](#technology-stack)
+- [Repository Structure](#repository-structure)
+- [End-to-End Data Flow](#end-to-end-data-flow)
+- [AWS Infrastructure](#aws-infrastructure)
+- [Databricks Processing Layer](#databricks-processing-layer)
+- [Medallion Architecture](#medallion-architecture)
+- [Delta Lake](#delta-lake)
+- [Unity Catalog](#unity-catalog)
+- [Snowflake Data Warehouse](#snowflake-data-warehouse)
+- [Executive Analytics Dashboard](#executive-analytics-dashboard)
+- [Pipeline Monitoring Dashboard](#pipeline-monitoring-dashboard)
+- [Performance Optimizations](#performance-optimizations)
+- [Security Implementation](#security-implementation)
+- [Deployment Workflow](#deployment-workflow)
+- [Future Enhancements](#future-enhancements)
+- [Key Learnings](#key-learnings)
+- [Conclusion](#conclusion)
+- [Author](#author)
 
 # Project Overview
 Modern organizations generate massive volumes of raw operational data every day. Transforming this data into reliable, governed, and analytics-ready datasets requires a scalable architecture capable of handling ingestion, transformation, monitoring, storage, and visualization while maintaining security, reliability, and data quality.
@@ -392,6 +432,21 @@ This project showcases a complete end-to-end Data Engineering solution built usi
 
 Beyond technical implementation, the solution emphasizes reliability, security, observability, and maintainability through IAM-based authentication, Databricks Secret Scopes, checkpointing, workflow orchestration, and dedicated pipeline monitoring. By combining robust engineering practices with business-focused analytics, the project demonstrates the design and implementation of a production-inspired data platform that is both scalable and extensible.
 
+# Repository statistics
+Languages:
+• Python
+• SQL
+
+Architecture:
+• Medallion Architecture
+
+Cloud:
+• AWS S3
+• Databricks
+• Snowflake
+
+Visualization:
+• Streamlit
 
 ---
 
@@ -416,3 +471,7 @@ I welcome feedback, suggestions, and opportunities to collaborate on data engine
 ### Thank you for visiting this repository!
 
 If you found this project interesting or helpful, please consider giving it a ⭐ on GitHub.
+
+## License
+
+This project is licensed under the MIT License.
