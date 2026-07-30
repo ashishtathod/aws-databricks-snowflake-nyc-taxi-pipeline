@@ -1,5 +1,14 @@
 # 🚖 NYC Taxi End-to-End Data Engineering Pipeline
+![AWS](https://img.shields.io/badge/AWS-S3-FF9900?logo=amazonaws&logoColor=white)
+![Databricks](https://img.shields.io/badge/Databricks-Lakehouse-EF3E42?logo=databricks&logoColor=white)
+![Snowflake](https://img.shields.io/badge/Snowflake-Data%20Warehouse-29B5E8?logo=snowflake&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3.12-blue?logo=python)
+![Streamlit](https://img.shields.io/badge/Streamlit-Dashboard-FF4B4B?logo=streamlit)
+
 A production-inspired end-to-end Data Engineering solution that ingests raw NYC Taxi trip records into an AWS Data Lake, processes them using Databricks' Medallion Architecture, stores business-ready analytics in Snowflake, and delivers interactive Executive Analytics and Pipeline Monitoring dashboards through Streamlit.
+
+# Solution Architecture
+![Architecture](architecture/aws_pipeline_architecture.png)
 
 # Project Overview
 Modern organizations generate massive volumes of raw operational data every day. Transforming this data into reliable, governed, and analytics-ready datasets requires a scalable architecture capable of handling ingestion, transformation, monitoring, storage, and visualization while maintaining security, reliability, and data quality.
