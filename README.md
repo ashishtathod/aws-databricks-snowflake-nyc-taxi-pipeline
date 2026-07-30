@@ -396,7 +396,7 @@ This project was designed and developed as part of my Data Engineering portfolio
 
 I welcome feedback, suggestions, and opportunities to collaborate on data engineering projects.
 
-📧 **Email:** your-tathod1001@gmail.com
+📧 **Email:** tathod1001@gmail.com
 
 💼 **LinkedIn:** https://www.linkedin.com/in/ashish-tathod-320207216/
 
