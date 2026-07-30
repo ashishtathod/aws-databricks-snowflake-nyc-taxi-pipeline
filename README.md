@@ -6,7 +6,7 @@
 ![Streamlit](https://img.shields.io/badge/Streamlit-Dashboard-FF4B4B?logo=streamlit)
 
 
-# Solution Architecture
+# Architecture
 ![Architecture](architecture/aws_pipeline_architecture.png)
 
 ## Project Highlights
